@@ -1,3 +1,7 @@
+*{
+    padding:0;
+    margin: 0;
+}
 body{
     box-sizing: content-box;
     background-color: #000A16;
@@ -56,6 +60,7 @@ body{
 /*--Greetings*/
 
 .personalInfo{
+
     color: white;
     width: 79vh;
     height: 40vh;
@@ -110,6 +115,7 @@ body{
 /*About me*/
 
 .AboutMe{
+
     color: white;
     padding-top: 50vh;
     font-family: Arial, Helvetica, sans-serif;
@@ -155,6 +161,7 @@ body{
 }
 
 .MyWork{
+
     margin-top: 50vh;
     margin-bottom: 15vh;
     width: 50vh auto;
@@ -221,6 +228,7 @@ body{
 
 
 .Resume{
+
     width:  45vh;
     height: 50vh;
     display: flex;
@@ -301,3 +309,21 @@ nav a{
     padding: 10vh;
 }
 
+/*--Responsive css code*/
+@media screen and (max-width:1439px){
+    .AboutMe{
+        transition: 0.3s;
+        display: block;
+    }
+}
+
+@media screen and (max-width:875px){
+    .personalInfo{
+        padding-left: 0px;
+        margin-left: 2px;
+        margin-right: 0px;
+    }
+    .socialNetworks, nav{
+        display: none;
+    }
+}
